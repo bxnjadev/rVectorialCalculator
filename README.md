@@ -29,6 +29,26 @@ And for show the function derivative.
 function.show_function_derivative(order)
 ```
 
+#Example
+
+```
+function = vectorial_function.new_function_vector_r3("sin(t)", "cos(t)", "t", "t")
+
+function.derive()
+function.derive()
+
+function.show_function()
+function.show_function_derivative(1)
+function.show_function_derivative(2)
+```
+
+Console showed:
+```
+r(t) = sin(t)i + cos(t)j + tk
+r(t)' = cos(t)i + -sin(t)j + 1k
+r(t)'' = -sin(t)i + -cos(t)j + 0k
+```
+
 Where order is the order of derivative.
 
 This project usted sympy, https://www.sympy.org/es/
