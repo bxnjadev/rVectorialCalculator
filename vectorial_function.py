@@ -115,8 +115,13 @@ class VectorialFunction:
     def get_magnitude_of_derivative(self, order):
         derivative = self.get_derivatives(order)
 
+        function_h = ""
+
+        if self.get_dimension() == R_3:
+            function_h = derivative[3]
+
         return vectorial_magnitude.calculate_magnitude(
-            derivative[0], derivative[1], derivative[2], self.variable
+            derivative[0], derivative[1], function_h, self.variable
         )
 
 

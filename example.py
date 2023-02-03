@@ -3,7 +3,7 @@ from sympy import *
 
 import vectorial_function
 
-function = vectorial_function.new_function_vector_r3("sin(t)", "cos(t)", "t", "t")
+function = vectorial_function.new_function_vector_r2("t**2 + 2", "t-1", "t")
 
 function.derive()
 function.derive()
