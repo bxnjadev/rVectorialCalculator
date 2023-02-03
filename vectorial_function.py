@@ -1,5 +1,7 @@
 from sympy import *
 
+import vectorial_magnitude
+
 WITHOUT_DIMENSION = "without_dimension"
 R_2 = "R_2"
 R_3 = "R_3"
@@ -104,6 +106,18 @@ class VectorialFunction:
             )
 
         self.derives.append(derive)
+
+    def get_magnitude(self):
+        return vectorial_magnitude.calculate_magnitude(
+            self.function_f, self.function_g, self.function_h, self.variable
+        )
+
+    def get_magnitude_of_derivative(self, order):
+        derivative = self.get_derivatives(order)
+
+        return vectorial_magnitude.calculate_magnitude(
+            derivative[0], derivative[1], derivative[2], self.variable
+        )
 
 
 def new_function_vector_r3(function_f, function_g, function_h, variable):
