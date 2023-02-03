@@ -118,7 +118,7 @@ class VectorialFunction:
         function_h = ""
 
         if self.get_dimension() == R_3:
-            function_h = derivative[3]
+            function_h = derivative[2]
 
         return vectorial_magnitude.calculate_magnitude(
             derivative[0], derivative[1], function_h, self.variable
