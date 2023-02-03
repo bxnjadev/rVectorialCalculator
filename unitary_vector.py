@@ -11,6 +11,4 @@ def calculate_tangent_vector(vectorial_function):
     g_component = simplify(first_derivative[1] / magnitude_first_derivative)
     h_component = simplify(first_derivative[2] / magnitude_first_derivative)
 
-    print("h component: ", h_component)
-
     return [f_component, g_component, h_component]
