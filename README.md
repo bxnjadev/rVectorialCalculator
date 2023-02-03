@@ -60,9 +60,10 @@ print(function.get_magnitude())
 print(function.get_magnitude_of_derivative(1))
 
 ```
+
+```
 sqrt(t**2 + 1)
 sqrt(2)
 ```
-
 
 This project usted sympy, https://www.sympy.org/es/
